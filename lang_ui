@@ -7,9 +7,12 @@ PORT=1234
 FILE1=/tmp/lang1-$$
 FILE2=/tmp/lang2-$$
 ERROR=/tmp/lang-err-$$
+FILTER=/tmp/lang-$$
 
 GETTEXT="gettext -d lang_ui"
 
+curl -s "http://semes-olla.rhcloud.com/words?Swadesh/English.py" | paste -----> $FILTER
+ 
 if [ -r ~/.lang.conf ]
 then
 	. ~/.lang.conf
@@ -57,6 +60,8 @@ fi
 while true
 do
 	$DIALOG --inputbox "`$GETTEXT \"Enter number:\"`" 8 35 2> $FILE1 || end
+	curl -s "http://semes-olla.rhcloud.com/words?`cat $FILE1`&Swadesh/Albanian.py" > $FILE2
+
 	if cat $FILE1 | $CALC > $FILE2 2>$ERROR
 	then
 		MSG="`$GETTEXT \"Translated word:\"` `cat $FILE2`\\n\\n`$GETTEXT \"Continue?\"`"

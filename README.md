@@ -8,7 +8,7 @@ Instruction to run the Timezone Program
   
 How it works:
 What this program takes a number from 1 to 207 (number of words in Swadesh list) from the English Swadesh list and translates the word in that particular number into Albanian. 
-The links for dictionaries can be found here: English: http://semes-olla.rhcloud.com/words? and Albanian: http://semes-olla.rhcloud.com/words?Swadesh/Albanian.py . This lists have been avaliable by Prof. Oleg Sadov at ITMO University in St. Petersburg, Russia.
+The links for dictionaries can be found here: English: http://semes-olla.rhcloud.com/words? and Albanian: http://semes-olla.rhcloud.com/words?Swadesh/Albanian.py . These lists have been avaliable by Prof. Oleg Sadov at ITMO University in St. Petersburg, Russia.
 If you wish to just check the translation of one word into Albanian language in terminal, you could type "sh lang".
 If you wish to just check the translation of one word into Albanian language in GUI, you could type "sh lang_ui", but it is somehow not showing the translated word (at least in my personal laptop). 
 The localization file is created, but due to some problems with my laptop, I can not check if it works or not. 

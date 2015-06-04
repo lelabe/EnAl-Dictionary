@@ -1,0 +1,11 @@
+# default: on
+# description: The language server
+service lang
+{
+	flags		= REUSE
+	socket_type	= stream        
+	wait		= no
+	user		= nobody
+	server		= /usr/local/bin/lang
+	disable		= no
+}

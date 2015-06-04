@@ -1,8 +1,8 @@
 # EnAl-Dictionary
 This is a simple English - Albanian dictionary written in shell script. 
 
-Instruction to run the Timezone Program
-  1. git clone https://www.github.com/Iqbal-PERCCOM/Timezone
+Instruction to run the English-Albanian dictionary 
+  1. git clone https://github.com/lelabe/EnAl-Dictionary
   2. If you need to switch user as a root use su - and then the root password
   3. Run the Makefile; Makefile has command to install xinetd (You will need this when you want to run lang_ui and lang_ui-al.)
   

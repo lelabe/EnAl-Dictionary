@@ -1,5 +1,6 @@
 #!/bin/sh
 
+FILE=/tmp/lang-$$
 curl -s "http://semes-olla.rhcloud.com/words?Swadesh/English.py"
 echo "Enter number"
 read var

@@ -3,7 +3,7 @@ install: lang_ui-al.mo
 	which gdialog >/dev/null 2>&1 || install gdialog /usr/local/bin
 	install lang.xinetd /etc/xinetd.d/lang
 	ln -sf /usr/local/bin/lang_ui /usr/local/bin/nlang_ui
-	install lang_ui-al.mo /usr/share/locale/ru/LC_MESSAGES/lang_ui.mo
+	install lang_ui-al.mo /usr/share/locale/sq/LC_MESSAGES/lang_ui.mo
 
 lang_ui.pot: lang_ui
 	xgettext -o lang_ui.pot -L Shell lang_ui

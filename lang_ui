@@ -61,7 +61,9 @@ while true
 do
 	$DIALOG --inputbox "`$GETTEXT \"Enter number:\"`" 8 35 2> $FILE1 || end
 	curl -s "http://semes-olla.rhcloud.com/words?`cat $FILE1`&Swadesh/Albanian.py" > $FILE2
-
+	
+	cat $FILE2
+	
 	if cat $FILE1 | $CALC > $FILE2 2>$ERROR
 	then
 		MSG="`$GETTEXT \"Translated word:\"` `cat $FILE2`\\n\\n`$GETTEXT \"Continue?\"`"

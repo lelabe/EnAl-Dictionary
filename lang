@@ -1,0 +1,4 @@
+curl -s "http://semes-olla.rhcloud.com/words?Swadesh/English.py"
+echo "Enter no"
+read var
+curl -s "http://semes-olla.rhcloud.com/word?$var&Swadesh/Albanian.py"
